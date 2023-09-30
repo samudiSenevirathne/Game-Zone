@@ -1,0 +1,248 @@
+body{
+    overflow: hidden;
+}
+
+main {
+    background: url("image/sky2.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+
+
+#cloud1{
+    position: absolute;
+    left: 21px;
+    top: 7px;
+    width: 151px;
+    height: 71px;
+    background: url("image/gray-clouds.jpg");
+    background-size: cover;
+    background-position: center ;
+}
+
+#cloud2{
+    position: absolute;
+    left: 300px;
+    top: 20px;
+    width: 151px;
+    height: 71px;
+    background: url("image/gray-clouds.jpg");
+    background-size: cover;
+    background-position: center ;
+}
+
+#cloud3{
+    position: absolute;
+    left: 600px;
+    top: 40px;
+    width: 151px;
+    height: 71px;
+    background: url("image/gray-clouds.jpg");
+    background-size: cover;
+    background-position: center ;
+}
+
+#cloud4{
+    position: absolute;
+    left: 900px;
+    top: 60px;
+    width: 151px;
+    height: 71px;
+    background: url("image/gray-clouds.jpg");
+    background-size: cover;
+    background-position: center ;
+}
+
+#cloud5{
+    position: absolute;
+    left: 1200px;
+    top: 80px;
+    width: 151px;
+    height: 71px;
+    background: url("image/gray-clouds.jpg");
+    background-size: cover;
+    background-position: center ;
+}
+
+#tree1 {
+    height: 145px;
+    width: 124px;
+    background: url("image/tree3.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: 155px;
+    left: 400px;
+    z-index: 2;
+    animation-name:moveTree1;
+    animation-duration: 10s;
+    animation-delay: 5s;
+    animation-play-state: running;/*Extra*/
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#tree2 {
+    height: 145px;
+    width: 124px;
+    background: url("image/tree3.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: 155px;
+    left: 1000px;
+    z-index: 2;
+    animation-name:moveTree2;
+    animation-duration: 15s;
+    animation-delay: 5s;
+    animation-play-state: running;/*Extra*/
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#tree3 {
+    height: 145px;
+    width: 124px;
+    background: url("image/tree3.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: 155px;
+    left: 1600px;
+    z-index: 2;
+    animation-name:moveTree3;
+    animation-duration: 20s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;/*Extra*/
+    animation-timing-function: linear;
+}
+
+#dragon{
+    position: absolute;
+    left: 14px;
+    bottom: 100px;
+    width: 193px;
+    height: 92px;
+    z-index: 3;
+    background: url("image/Black_Dragon.jpg");
+    background-size: cover;
+    background-position:center;
+    /*background-repeat: no-repeat;*/
+
+}
+
+
+#road {
+    height: 26vh;
+    background: url("image/road.jpg");
+    position: absolute;
+    /*width: 1000vw;*/
+    width: calc(10*100vw);
+    bottom: 0;
+    animation-name:moveCityAndRoad ;
+    animation-duration: 30s;
+    animation-delay: 5s;
+    animation-play-state: running;/*Extra*/
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+/*#dragon:active{*/
+/*    bottom: 310px;*/
+/*}*/
+
+
+@keyframes moveCityAndRoad {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-75%);
+    }
+}
+
+@keyframes moveTree1{
+    from {
+        left: 400px;
+    }
+    to {
+        left: -400px;
+    }
+}
+@keyframes moveTree2{
+    from {
+        left: 1000px;
+    }
+    to {
+        left: 0;
+    }
+}
+@keyframes moveTree3{
+    from {
+        left: 1600px;
+    }
+    to {
+        left: 0;
+    }
+}
+
+#title{
+    width:259px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top:0;
+    margin: auto;
+    color:orangered;
+    /*margin-top:0;*/
+    /*margin-bottom: 0;*/
+    /*margin-right: 0;*/
+    /*margin-left: 0;*/
+}
+
+#title>h1{
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+    animation-name:titleDisplay ;
+    animation-duration: 5s;
+    animation-iteration-count:1;
+}
+
+
+@keyframes titleDisplay {
+    25% {
+        transform:rotate(360deg);
+        font-size: 25px;
+    }
+    75% {
+        transform:rotate(-360deg);
+        font-size: 10px;
+    }
+}
+
+
+#marks{
+    position: absolute;
+    right: 0;
+    top:0;
+    width:100px;
+    height: 35px;
+    border: 2px solid white;
+    box-shadow: 1px 0 20px 6px gray;
+    color: white;
+
+}
+
+#marks>h1{
+    font-size: 30px;
+    margin-top: 0;
+    margin-left: 36px;
+    margin-bottom: 0;
+}
+
+
