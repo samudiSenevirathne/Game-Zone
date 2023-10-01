@@ -81,6 +81,7 @@ main {
     animation-play-state: running;/*Extra*/
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    border: 1px solid red;
 }
 
 #tree2 {
@@ -99,6 +100,7 @@ main {
     animation-play-state: running;/*Extra*/
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    border: 1px solid blue;
 }
 #tree3 {
     height: 145px;
@@ -116,6 +118,7 @@ main {
     animation-iteration-count: infinite;
     animation-play-state: running;/*Extra*/
     animation-timing-function: linear;
+    border: 1px solid green;
 }
 
 #dragon{
@@ -129,7 +132,7 @@ main {
     background-size: cover;
     background-position:center;
     /*background-repeat: no-repeat;*/
-
+    border: 1px solid white;/**/
 }
 
 
@@ -149,9 +152,9 @@ main {
 }
 
 
-/*#dragon:active{*/
-/*    bottom: 310px;*/
-/*}*/
+#dragon:active{
+    bottom: 310px;
+}
 
 
 @keyframes moveCityAndRoad {
@@ -244,5 +247,31 @@ main {
     margin-left: 36px;
     margin-bottom: 0;
 }
+
+#restart{
+    position: absolute;
+    width: calc(10*100vw);
+    height: 100vh;
+}
+
+#restart>button{
+    position: absolute;
+    left: 600px;
+    top: 333px;
+    width:100px;
+    height: 35px;
+    padding: 0 0 0 0;
+    background: black;
+    color: white;
+    border: solid 2px white;
+    border-radius: 25px;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+#restart>button:hover{
+    transform: scale(1.2, 1.2);
+}
+
 
 
