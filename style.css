@@ -205,9 +205,11 @@ main {
 
 #title>h1{
     font-size: 50px;
+    font-family: 'Almendra', serif;
     margin-top: 0;
     margin-bottom: 0;
     animation-name:titleDisplay ;
+    animation-delay: 1s;
     animation-duration: 5s;
     animation-iteration-count:1;
 }
@@ -248,17 +250,33 @@ main {
     position: absolute;
     width: calc(10*100vw);
     height: 100vh;
+    background:rgba(43, 41, 41, 0.81);
+    z-index: 4;
+    visibility: hidden;
 }
+
+#restart>h1{
+    position: absolute;
+    left: 610px;
+    top: 350px;
+    color: white;
+    font-size: 50px;
+    font-family: 'Almendra', serif;
+    visibility: hidden;
+}
+
 
 #restart>button{
     position: absolute;
     left: 600px;
     top: 333px;
     width:100px;
-    height: 35px;
+    height: 38px;
     padding: 0 0 0 0;
     background: black;
     color: white;
+    font-size: 25px;
+    font-family: 'Teko', sans-serif;
     border: solid 2px white;
     border-radius: 25px;
     visibility: hidden;
