@@ -28,10 +28,10 @@ function playGame () {
         }
         /*level 02 start*/
         if(count>6){
-            $("#road").css({"animation-duration":"25s","animation-play-state":"running"});
+            $("#road").css({"animation-duration":"20s","animation-play-state":"running"});
             $("#dragon").css("border", "1px solid yellow");
             $("#tree1").css("animation-play-state","running");
-            $("#tree2").css("animation-play-state", "running");
+            $("#tree2").css({"height": "217.5px", "width": "186px","animation-play-state":"running"});
             $("#tree3").css("animation-play-state", "running");
         }
 
@@ -44,13 +44,13 @@ function playGame () {
     var t1w= $("#tree1").width();
     var t1h= $("#tree1").height();
 
-    var t2w= $("#tree2").width();
-    var t2h= $("#tree2").height();
-
     var t3w= $("#tree3").width();
     var t3h= $("#tree3").height();
 
     setInterval(function() {
+
+        var t2w= $("#tree2").width();
+        var t2h= $("#tree2").height();
 
             var dset= $("#dragon").offset();
 
