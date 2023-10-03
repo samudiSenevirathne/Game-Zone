@@ -15,24 +15,45 @@ function playGame () {
 
 
         /*level 01 complete*/
-        if(count==6) {
+        if(count==1) {
             $("#road").css("animation-play-state", "paused");
             $("#tree1").css("animation-play-state", "paused");
             $("#tree2").css("animation-play-state", "paused");
             $("#tree3").css("animation-play-state", "paused");
             $("#restart").css("visibility", "visible");
-            $("#restart>h1").text("level 01 complete").css({"left": "502px", "top": "265px", "visibility": "visible"});
+            $("#restart>h1").text("level 01 completed").css({"left": "502px", "top": "265px", "visibility": "visible"});
             $("#title").css("animation-name", "paused").text('   ');
             $("#restart").fadeOut(6000);
             // clearInterval(id);
         }
+        /*level 02 complete*/
+            if(count==8){
+            $("#road").css("animation-play-state", "paused");
+            $("#tree1").css("animation-play-state", "paused");
+            $("#tree2").css("animation-play-state", "paused");
+            $("#tree3").css("animation-play-state", "paused");
+            $("#restart").fadeIn(100);
+            $("#restart").css("visibility", "visible");
+            $("#restart>h1").text("level 02 completed").css({"left": "502px", "top": "265px", "visibility": "visible"});
+            $("#title").css("animation-name", "paused").text('   ');
+            $("#restart").fadeOut(6000);
+        }
         /*level 02 start*/
-        if(count>6){
+        if(count>1){
             $("#road").css({"animation-duration":"20s","animation-play-state":"running"});
             $("#dragon").css("border", "1px solid yellow");
             $("#tree1").css("animation-play-state","running");
             $("#tree2").css({"height": "217.5px", "width": "186px","animation-play-state":"running"});
             $("#tree3").css("animation-play-state", "running");
+        }
+        /*level 03 start*/
+        if(count>8){
+            $("#road").css({"animation-duration":"10s","animation-play-state":"running"});
+            $("#dragon").css("border", "1px solid pink");
+            $("#forest").css("visibility", "visible");
+            $("#tree1").css({"bottom":"135px","animation-play-state":"running",'background-image':'url("image/white_tree.png")'});
+            $("#tree2").css({"bottom":"135px","height": "217.5px", "width": "186px","animation-play-state":"running",'background-image':'url("image/white_tree.png")'});
+            $("#tree3").css({"bottom":"135px","animation-play-state":"running",'background-image':'url("image/white_tree.png")'});
         }
 
     },6000);
@@ -41,13 +62,13 @@ function playGame () {
     var dw= $("#dragon").width();
     var dh= $("#dragon").height();
 
-    var t1w= $("#tree1").width();
-    var t1h= $("#tree1").height();
-
-    var t3w= $("#tree3").width();
-    var t3h= $("#tree3").height();
-
     setInterval(function() {
+
+        var t1w= $("#tree1").width();
+        var t1h= $("#tree1").height();
+
+        var t3w= $("#tree3").width();
+        var t3h= $("#tree3").height();
 
         var t2w= $("#tree2").width();
         var t2h= $("#tree2").height();

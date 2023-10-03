@@ -3,7 +3,8 @@ body{
 }
 
 main {
-    background: url("image/sky2.jpg");
+    background: url("image/sky2.jpg");/*now eka*/
+    /*background: url("image/sky_my.png");!*furer level wala eka testing*!*/
     width: 100vw;
     height: 100vh;
     background-size: cover;
@@ -16,9 +17,11 @@ main {
     top: 7px;
     width: 151px;
     height: 71px;
-    background: url("image/gray-clouds.jpg");
+    background: url("image/gray-clouds.jpg");/*now*/
+    /*background: url("image/cloud_my.png");!*furer level wala eka testing*!*/
     background-size: cover;
     background-position: center ;
+    /*visibility: hidden;!*furer level wala eka testing*!*/
 }
 
 #cloud2{
@@ -27,9 +30,11 @@ main {
     top: 20px;
     width: 151px;
     height: 71px;
-    background: url("image/gray-clouds.jpg");
+    background: url("image/gray-clouds.jpg");/*now*/
+    /*background: url("image/cloud_my.png");!*furer level wala eka testing*!*/
     background-size: cover;
     background-position: center ;
+    /*visibility: hidden;!*furer level wala eka testing*!*/
 }
 
 #cloud3{
@@ -38,9 +43,11 @@ main {
     top: 40px;
     width: 151px;
     height: 71px;
-    background: url("image/gray-clouds.jpg");
+    background: url("image/gray-clouds.jpg");/*now*/
+    /*background: url("image/cloud_my.png");!*furer level wala eka testing*!*/
     background-size: cover;
     background-position: center ;
+    /*visibility: hidden;!*furer level wala eka testing*!*/
 }
 
 #cloud4{
@@ -49,9 +56,11 @@ main {
     top: 60px;
     width: 151px;
     height: 71px;
-    background: url("image/gray-clouds.jpg");
+    background: url("image/gray-clouds.jpg");/*now*/
+    /*background: url("image/cloud_my.png");!*furer level wala eka testing*!*/
     background-size: cover;
     background-position: center ;
+    /*visibility: hidden;!*furer level wala eka testing*!*/
 }
 
 #cloud5{
@@ -60,10 +69,60 @@ main {
     top: 80px;
     width: 151px;
     height: 71px;
-    background: url("image/gray-clouds.jpg");
+    background: url("image/gray-clouds.jpg");/*now*/
+    /*background: url("image/cloud_my.png");!*furer level wala eka testing*!*/
     background-size: cover;
     background-position: center ;
+    /*visibility: hidden;!*furer level wala eka testing*!*/
 }
+
+#forest{
+    height: 266px;
+    width: 1200px;
+    background: url("image/black-tree_gather-png.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 58px;
+    bottom: 169px;
+    visibility: hidden;
+}
+
+/*#forest1 {*/
+/*    height: 330px;*/
+/*    width: 506.25px;*/
+/*    background: url("image/forest.png");*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    position: absolute;*/
+/*    bottom: 169px;*/
+/*    left: 0;*/
+/*     !*visibility: hidden;*!*/
+/*}*/
+
+/*#forest2 {*/
+/*    height: 330px;*/
+/*    width: 506.25px;*/
+/*    background: url("image/forest_temp.png");*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    position: absolute;*/
+/*    bottom: 169px;*/
+/*    left: 506px;*/
+/*    !*visibility: hidden;*!*/
+/*}*/
+
+/*#forest3 {*/
+/*    height: 330px;*/
+/*    width: 506.25px;*/
+/*    background: url("image/forest.png");*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    position: absolute;*/
+/*    bottom: 169px;*/
+/*    left: 1012px;*/
+/*    !*visibility: hidden;*!*/
+/*}*/
 
 #tree1 {
     height: 145px;
@@ -102,6 +161,7 @@ main {
     animation-timing-function: linear;
     border: 1px solid blue;
 }
+
 #tree3 {
     height: 145px;
     width: 124px;
@@ -121,11 +181,11 @@ main {
     border: 1px solid green;
 }
 
-#dragon{
+#dragon{ /*now*/
     position: absolute;
     left: 14px;
     bottom: 100px;
-    width: 193px;
+    width: 196px;
     height: 92px;
     z-index: 3;
     background: url("image/Black_Dragon.jpg");
@@ -136,7 +196,21 @@ main {
 }
 
 
-#road {
+/*#dragon{!*future level testing*!*/
+/*    position: absolute;*/
+/*    left: 14px;*/
+/*    bottom: 50px;*/
+/*    width: 196px;*/
+/*    height: 92px;*/
+/*    z-index: 3;*/
+/*    background: url("image/dragon_my.png");*/
+/*    background-size: cover;*/
+/*    background-position:center;*/
+/*    !*background-repeat: no-repeat;*!*/
+/*    border: 1px solid white;!**!*/
+/*}*/
+
+#road {       /*now*/
     height: 26vh;
     background: url("image/road.jpg");
     position: absolute;
@@ -150,6 +224,22 @@ main {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+
+/*#road {    !*for future levels*!*/
+/*    background: url("image/Road_my.png");*/
+/*    height: 28vh;*/
+/*    z-index: 1;!*new*!*/
+/*    position: absolute;*/
+/*    !*width: 1000vw;*!*/
+/*    width: calc(10*100vw);*/
+/*    bottom: 0;*/
+/*    animation-name:moveCityAndRoad ;*/
+/*    animation-duration: 30s;*/
+/*    animation-delay: 5s;*/
+/*    animation-play-state: running;!*Extra*!*/
+/*    animation-iteration-count: infinite;*/
+/*    animation-timing-function: linear;*/
+/*}*/
 
 
 #dragon:active{
@@ -288,4 +378,21 @@ main {
 }
 
 
-
+/*#birds{*/
+/*    height: 182px;*/
+/*    width: 250px;*/
+/*    background: url("image/gif/birds.gif");*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    position: absolute;*/
+/*    bottom: 450px;*/
+/*    left: 300px;*/
+/*    z-index: 2;*/
+/*    !*animation-name:moveTree1;*!*/
+/*    animation-duration: 10s;*/
+/*    animation-delay: 5s;*/
+/*    animation-play-state: running;!*Extra*!*/
+/*    animation-iteration-count: infinite;*/
+/*    animation-timing-function: linear;*/
+/*    border: 1px solid white;*/
+/*}*/
