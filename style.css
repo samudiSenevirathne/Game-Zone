@@ -5,6 +5,7 @@ body{
 main {
     background: url("image/sky2.jpg");/*now eka*/
     /*background: url("image/sky_my.png");!*furer level wala eka testing*!*/
+    /*background: url("image/sky_green.png");!*furer level  testing*!*/
     width: 100vw;
     height: 100vh;
     background-size: cover;
@@ -19,6 +20,7 @@ main {
     height: 71px;
     background: url("image/gray-clouds.jpg");/*now*/
     /*background: url("image/cloud_my.png");!*furer level wala eka testing*!*/
+    /*background: url("image/cloud_green.png");!*furer level  testing*!*/
     background-size: cover;
     background-position: center ;
     /*visibility: hidden;!*furer level wala eka testing*!*/
@@ -32,6 +34,7 @@ main {
     height: 71px;
     background: url("image/gray-clouds.jpg");/*now*/
     /*background: url("image/cloud_my.png");!*furer level wala eka testing*!*/
+    /*background: url("image/cloud_green.png");!*furer level testing*!*/
     background-size: cover;
     background-position: center ;
     /*visibility: hidden;!*furer level wala eka testing*!*/
@@ -45,6 +48,7 @@ main {
     height: 71px;
     background: url("image/gray-clouds.jpg");/*now*/
     /*background: url("image/cloud_my.png");!*furer level wala eka testing*!*/
+    /*background: url("image/cloud_green.png");!*furer level testing*!*/
     background-size: cover;
     background-position: center ;
     /*visibility: hidden;!*furer level wala eka testing*!*/
@@ -58,6 +62,7 @@ main {
     height: 71px;
     background: url("image/gray-clouds.jpg");/*now*/
     /*background: url("image/cloud_my.png");!*furer level wala eka testing*!*/
+    /*background: url("image/cloud_green.png");!*furer level testing*!*/
     background-size: cover;
     background-position: center ;
     /*visibility: hidden;!*furer level wala eka testing*!*/
@@ -71,6 +76,7 @@ main {
     height: 71px;
     background: url("image/gray-clouds.jpg");/*now*/
     /*background: url("image/cloud_my.png");!*furer level wala eka testing*!*/
+    /*background: url("image/cloud_green.png");!*furer level testing*!*/
     background-size: cover;
     background-position: center ;
     /*visibility: hidden;!*furer level wala eka testing*!*/
@@ -91,7 +97,8 @@ main {
 #forest1 {
     height: 330px;
     width: 506.25px;
-    background: url("image/forest.png");
+    background: url("image/forest.png"); /*furer level testing part 1*/
+    /*background: url("image/green_forest.png"); !*furer level testing part 2*!*/
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -103,7 +110,8 @@ main {
 #forest2 {
     height: 330px;
     width: 506.25px;
-    background: url("image/forest_temp.png");
+    background: url("image/forest_temp.png"); /*furer level testing part 1*/
+    /*background: url("image/green_forest_temp.png"); !*furer level testing part 2*!*/
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -115,7 +123,8 @@ main {
 #forest3 {
     height: 330px;
     width: 506.25px;
-    background: url("image/forest.png");
+    background: url("image/forest.png"); /*furer level testing part 1*/
+    /*background: url("image/green_forest.png"); !*furer level testing part 2*!*/
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -128,7 +137,8 @@ main {
     height: 145px;
     width: 124px;
     background: url("image/tree3.png");/*now*/
-    /*background: url("image/white_tree.png");!*for future*!*/
+    /*background: url("image/white_tree.png");!*for future 1*!*/
+    /*background: url("image/tree_green.png");!*for future 2*!*/
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -149,7 +159,8 @@ main {
     height: 145px;
     width: 124px;
     background: url("image/tree3.png");/*now*/
-    /*background: url("image/white_tree.png");!*for future*!*/
+    /*background: url("image/white_tree.png");!*for future 1*!*/
+    /*background: url("image/tree_green.png");!*for future 2*!*/
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -170,7 +181,8 @@ main {
     height: 145px;
     width: 124px;
     background: url("image/tree3.png");/*now*/
-    /*background: url("image/white_tree.png");!*for future*!*/
+    /*background: url("image/white_tree.png");!*for future 1*!*/
+    /*background: url("image/tree_green.png");!*for future 2*!*/
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -209,11 +221,12 @@ main {
 /*    width: 196px;*/
 /*    height: 92px;*/
 /*    z-index: 3;*/
-/*    background: url("image/dragon_my.png");*/
+/*    background: url("image/dragon_my.png");!*for future 1*!*/
+/*    !*background: url("image/dragon_green.png");!*for future 2*!*!*/
 /*    background-size: cover;*/
 /*    background-position:center;*/
 /*    !*background-repeat: no-repeat;*!*/
-/*    border: 1px solid white;!**!*/
+/*    border: 1px solid #ff7d00;!**!*/
 /*}*/
 
 #road {       /*now*/
@@ -232,7 +245,8 @@ main {
 }
 
 /*#road {    !*for future levels*!*/
-/*    background: url("image/Road_my.png");*/
+/*    background: url("image/Road_my_2.png");!*for future 1*!*/
+/*    !*background: url("image/Road_green.png");!*for future 2*!*!*/
 /*    height: 28vh;*/
 /*    z-index: 1;!*new*!*/
 /*    position: absolute;*/
@@ -249,7 +263,8 @@ main {
 
 
 #dragon:active{
-    bottom: 380px;
+    /*bottom: 380px;!*Testing- if tree bottom is 155px ,this size ok *!*/
+    bottom: 330px;
 }
 
 
@@ -382,6 +397,30 @@ main {
 #restart>button:hover{
     transform: scale(1.2, 1.2);
 }
+
+#rain{ /*furer level testing*/
+    position: absolute;
+    background: url("image/Raining.png");
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    z-index: 2;
+    visibility: hidden;
+}
+
+#grass{ /*furer level testing*/
+        position: absolute;
+        background: url("image/grass.png");
+        /*background: url("image/grass_green.png");*/
+        height: 103px;
+        width: 111px;
+        right: 5px;
+        bottom: 0;
+        background-size: cover;
+        z-index: 2;
+        visibility: hidden;
+}
+
 
 
 /*#birds{*/
