@@ -88,50 +88,52 @@ main {
     visibility: hidden;
 }
 
-/*#forest1 {*/
-/*    height: 330px;*/
-/*    width: 506.25px;*/
-/*    background: url("image/forest.png");*/
-/*    background-size: cover;*/
-/*    background-position: center;*/
-/*    position: absolute;*/
-/*    bottom: 169px;*/
-/*    left: 0;*/
-/*     !*visibility: hidden;*!*/
-/*}*/
+#forest1 {
+    height: 330px;
+    width: 506.25px;
+    background: url("image/forest.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: 169px;
+    left: 0;
+    visibility: hidden;
+}
 
-/*#forest2 {*/
-/*    height: 330px;*/
-/*    width: 506.25px;*/
-/*    background: url("image/forest_temp.png");*/
-/*    background-size: cover;*/
-/*    background-position: center;*/
-/*    position: absolute;*/
-/*    bottom: 169px;*/
-/*    left: 506px;*/
-/*    !*visibility: hidden;*!*/
-/*}*/
+#forest2 {
+    height: 330px;
+    width: 506.25px;
+    background: url("image/forest_temp.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: 169px;
+    left: 506px;
+    visibility: hidden;
+}
 
-/*#forest3 {*/
-/*    height: 330px;*/
-/*    width: 506.25px;*/
-/*    background: url("image/forest.png");*/
-/*    background-size: cover;*/
-/*    background-position: center;*/
-/*    position: absolute;*/
-/*    bottom: 169px;*/
-/*    left: 1012px;*/
-/*    !*visibility: hidden;*!*/
-/*}*/
+#forest3 {
+    height: 330px;
+    width: 506.25px;
+    background: url("image/forest.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: 169px;
+    left: 1012px;
+    visibility: hidden;
+}
 
 #tree1 {
     height: 145px;
     width: 124px;
-    background: url("image/tree3.png");
+    background: url("image/tree3.png");/*now*/
+    /*background: url("image/white_tree.png");!*for future*!*/
     background-size: cover;
     background-position: center;
     position: absolute;
-    bottom: 155px;
+    /*bottom: 155px;!*now*!*/
+    bottom: 100px;/*for future*/
     left: 400px;
     z-index: 2;
     animation-name:moveTree1;
@@ -146,11 +148,13 @@ main {
 #tree2 {
     height: 145px;
     width: 124px;
-    background: url("image/tree3.png");
+    background: url("image/tree3.png");/*now*/
+    /*background: url("image/white_tree.png");!*for future*!*/
     background-size: cover;
     background-position: center;
     position: absolute;
-    bottom: 155px;
+    /*bottom: 155px;!*now*!*/
+    bottom: 100px;/*for future*/
     left: 1000px;
     z-index: 2;
     animation-name:moveTree2;
@@ -165,11 +169,13 @@ main {
 #tree3 {
     height: 145px;
     width: 124px;
-    background: url("image/tree3.png");
+    background: url("image/tree3.png");/*now*/
+    /*background: url("image/white_tree.png");!*for future*!*/
     background-size: cover;
     background-position: center;
     position: absolute;
-    bottom: 155px;
+    /*bottom: 155px;!*now*!*/
+    bottom: 100px;/*for future*/
     left: 1600px;
     z-index: 2;
     animation-name:moveTree3;
