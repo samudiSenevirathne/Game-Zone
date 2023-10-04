@@ -13,7 +13,6 @@ function playGame () {
     id=setInterval(function marks(){
         $("#marks>h1").text(count++);
 
-
         /*level 01 complete*/
         if(count==6) {
             $("#road").css("animation-play-state", "paused");
@@ -28,10 +27,10 @@ function playGame () {
         }
         /*level 02 complete*/
         if(count==20){
-            $("#road").css("animation-play-state", "paused");
-            $("#tree1").css("animation-play-state", "paused");
-            $("#tree2").css("animation-play-state", "paused");
-            $("#tree3").css("animation-play-state", "paused");
+            $("#road").css("animation-name", "paused");
+            $("#tree1").css("animation-name", "paused");
+            $("#tree2").css("animation-name", "paused");
+            $("#tree3").css("animation-name", "paused");
             $("#restart").fadeIn(100);
             $("#restart>h1").text("level 02 completed").css({"left": "502px", "top": "265px", "visibility": "visible"});
             $("#title").css("animation-name", "paused").text('   ');
@@ -48,12 +47,12 @@ function playGame () {
         }
         /*level 03 start*/
         if(count>20){
-            $("#road").css({"animation-duration":"15s","animation-play-state":"running"});
+            $("#road").css({"animation-duration":"15s","animation-name":"moveCityAndRoad"});
             $("#dragon").css("border", "1px solid pink");
             $("#forest").css("visibility", "visible");
-            $("#tree1").css({"bottom":"135px","animation-play-state":"running",'background-image':'url("image/white_tree.png")'});
-            $("#tree2").css({"bottom":"135px","height": "217.5px", "width": "186px","animation-play-state":"running",'background-image':'url("image/white_tree.png")'});
-            $("#tree3").css({"bottom":"135px","animation-play-state":"running",'background-image':'url("image/white_tree.png")'});
+            $("#tree1").css({"bottom":"135px","animation-name":"moveTree1",'background-image':'url("image/white_tree.png")'});
+            $("#tree2").css({"bottom":"135px","height": "217.5px", "width": "186px","animation-name":"moveTree2",'background-image':'url("image/white_tree.png")'});
+            $("#tree3").css({"bottom":"135px","animation-name":"moveTree3",'background-image':'url("image/white_tree.png")'});
         }
 
     },6000);
