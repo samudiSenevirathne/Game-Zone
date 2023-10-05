@@ -70,7 +70,7 @@ function playGame () {
 
         /*level 02 start*/
         if(count>6 && count<20){
-            $("#road").css({"animation-duration":"20s","animation-play-state":"running"});
+            $("#road").css({"animation-duration":"25s","animation-play-state":"running"});
             $("#dragon").css("border", "1px solid yellow");
             $("#tree1").css("animation-play-state","running");
             $("#tree2").css({"height": "217.5px", "width": "186px","animation-play-state":"running"});
@@ -78,7 +78,7 @@ function playGame () {
         }
         /*level 03 start*/
         if(count>20 && count<30){
-            $("#road").css({"animation-duration":"15s","animation-name":"moveCityAndRoad"});
+            $("#road").css({"animation-duration":"20s","animation-name":"moveCityAndRoad"});
             $("#dragon").css("border", "1px solid pink");
             $("#forest").css("visibility", "visible");
             $("#tree1").css({"animation-name":"moveTree1",'background-image':'url("image/white_tree.png")'});
@@ -91,11 +91,11 @@ function playGame () {
             $("#cloud1,#cloud2,#cloud3,#cloud4,#cloud5").css('background-image','url("image/cloud_my.png")');
             $("#forest").css("visibility", "hidden");
             $("#forest1,#forest2,#forest3").css("visibility", "visible");
-            $("#road").css({'background-image':'url("image/Road_my_2.png")','height': '28vh','z-index': '1','animation-duration':'10s','animation-name':'moveCityAndRoad'});
+            $("#road").css({'background-image':'url("image/Road_my_original.png")','height': '28vh','z-index': '1','animation-duration':'15s','animation-name':'moveCityAndRoad'});
             $("#dragon").css({'border':'1px solid #ff7d00','background-image':'url("image/dragon_my.png")'});
-            $("#tree1").css("animation-name","moveTree1");
-            $("#tree2").css("animation-name","moveTree2");
-            $("#tree3").css("animation-name","moveTree3");
+            $("#tree1").css({"animation-duration":"8s","animation-name":"moveTree1"});
+            $("#tree2").css({"animation-duration":"11s","animation-name":"moveTree2"});
+            $("#tree3").css({"animation-duration":"17s","animation-name":"moveTree3"});
         }
         /*level 05 start*/
         if(count>50){
@@ -103,11 +103,11 @@ function playGame () {
             $("#cloud1,#cloud2,#cloud3,#cloud4,#cloud5").css('background-image','url("image/cloud_green.png")');
             $("#forest1,#forest3").css('background-image','url("image/green_forest.png")');
             $("#forest2").css('background-image','url("image/green_forest_temp.png")');
-            $("#road").css({'background-image':'url("image/Road_green.png")','animation-duration':'5s','animation-name':'moveCityAndRoad'});
+            $("#road").css({'background-image':'url("image/Road_green_original.png")','animation-duration':'10s','animation-name':'moveCityAndRoad'});
             $("#dragon").css({'border':'1px solid green','background-image':'url("image/dragon_green.png")'});
-            $("#tree1").css({"animation-name":"moveTree1",'background-image':'url("image/tree_green.png")'});
-            $("#tree2").css({"animation-name":"moveTree2",'background-image':'url("image/tree_green.png")'});
-            $("#tree3").css({"animation-name":"moveTree3",'background-image':'url("image/tree_green.png")'});
+            $("#tree1").css({"animation-duration":"8s","animation-name":"moveTree1",'background-image':'url("image/tree_green.png")'});
+            $("#tree2").css({"animation-duration":"8s","animation-name":"moveTree2",'background-image':'url("image/tree_green.png")'});
+            $("#tree3").css({"animation-duration":"13s","animation-name":"moveTree3",'background-image':'url("image/tree_green.png")'});
             $("#grass").css('background-image','url("image/grass_green.png")');
             $("#rain").css("visibility", "hidden");
         }
