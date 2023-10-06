@@ -157,6 +157,9 @@ function playGame () {
               clearInterval(id);
               count = 0;
               $("#title").css("animation-name", "paused").text('Game Over').fadeIn(100);
+              if(dsetInitial.top == dset.top ){
+                  $("#lifeBar").val(0);
+              }
           }else{
               $("#road").css("animation-play-state", "paused");
               $("#tree1").css("animation-play-state", "paused");
@@ -168,6 +171,9 @@ function playGame () {
               clearInterval(id);
               count = 0;
               $("#title").css("animation-name", "paused").text('Game Over').fadeIn(100);
+              if(dsetInitial.top == dset.top ){
+                  $("#lifeBar").val(0);
+              }
           }
       }
     },100);
