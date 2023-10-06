@@ -112,7 +112,6 @@ function playGame () {
             $("#rain").css("visibility", "hidden");
         }
 
-
     },6000);
 
     const dsetInitial=$("#dragon").offset();
@@ -138,7 +137,7 @@ function playGame () {
             var t3set= $("#tree3").offset();
 
             /*dragon's  life manage*/
-            if(dsetInitial.top == dset.top ){
+            if(dsetInitial.top == dset.top && $("#lifeBar").val()!= 0 ){
                 $("#lifeBar").val(100);
             }
             else{
@@ -147,6 +146,7 @@ function playGame () {
 
       if(dset.left < t1set.left + t1w && dset.left + dw > t1set.left && dset.top < t1set.top + t1h && dset.top + dh > t1set.top || dset.left < t2set.left + t2w && dset.left + dw > t2set.left && dset.top < t2set.top + t2h && dset.top + dh > t2set.top || dset.left < t3set.left + t3w && dset.left + dw > t3set.left && dset.top < t3set.top + t3h && dset.top + dh > t3set.top || $("#lifeBar").val()==0 ) {
           if(count<6){
+              $("#dragon").css({'top':dset.top,'left':dset.left});/*extra*/
               $("#road").css("animation-play-state", "paused");
               $("#tree1").css("animation-play-state", "paused");
               $("#tree2").css("animation-play-state", "paused");
@@ -157,10 +157,12 @@ function playGame () {
               clearInterval(id);
               count = 0;
               $("#title").css("animation-name", "paused").text('Game Over').fadeIn(100);
-              if(dsetInitial.top == dset.top ){
+              if(dsetInitial.top == dset.top) {
                   $("#lifeBar").val(0);
               }
+              clearInterval();
           }else{
+              $("#dragon").css({'top':dset.top,'left':dset.left});/*extra*/
               $("#road").css("animation-play-state", "paused");
               $("#tree1").css("animation-play-state", "paused");
               $("#tree2").css("animation-play-state", "paused");
@@ -171,9 +173,10 @@ function playGame () {
               clearInterval(id);
               count = 0;
               $("#title").css("animation-name", "paused").text('Game Over').fadeIn(100);
-              if(dsetInitial.top == dset.top ){
+              if(dsetInitial.top == dset.top ) {
                   $("#lifeBar").val(0);
               }
+              clearInterval();
           }
       }
     },100);
