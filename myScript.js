@@ -115,11 +115,12 @@ function playGame () {
 
     },6000);
 
+    const dsetInitial=$("#dragon").offset();
 
     setInterval(function() {
 
-        var dw= $("#dragon").width();
-        var dh= $("#dragon").height();
+        var dw = $("#dragon").width();
+        var dh = $("#dragon").height();
 
         var t1w= $("#tree1").width();
         var t1h= $("#tree1").height();
@@ -136,7 +137,15 @@ function playGame () {
             var t2set= $("#tree2").offset();
             var t3set= $("#tree3").offset();
 
-      if(dset.left < t1set.left + t1w && dset.left + dw > t1set.left && dset.top < t1set.top + t1h && dset.top + dh > t1set.top || dset.left < t2set.left + t2w && dset.left + dw > t2set.left && dset.top < t2set.top + t2h && dset.top + dh > t2set.top || dset.left < t3set.left + t3w && dset.left + dw > t3set.left && dset.top < t3set.top + t3h && dset.top + dh > t3set.top ) {
+            /*dragon's  life manage*/
+            if(dsetInitial.top == dset.top ){
+                $("#lifeBar").val(100);
+            }
+            else{
+                $("#lifeBar").val($("#lifeBar").val()-1);
+            }
+
+      if(dset.left < t1set.left + t1w && dset.left + dw > t1set.left && dset.top < t1set.top + t1h && dset.top + dh > t1set.top || dset.left < t2set.left + t2w && dset.left + dw > t2set.left && dset.top < t2set.top + t2h && dset.top + dh > t2set.top || dset.left < t3set.left + t3w && dset.left + dw > t3set.left && dset.top < t3set.top + t3h && dset.top + dh > t3set.top || $("#lifeBar").val()==0 ) {
           if(count<6){
               $("#road").css("animation-play-state", "paused");
               $("#tree1").css("animation-play-state", "paused");

@@ -421,6 +421,12 @@ main {
         visibility: hidden;
 }
 
+#lifeBar{
+    position: absolute;
+    transform: rotate(-90deg);
+    left: -47px;
+    bottom: 39px;
+}
 
 
 /*#birds{*/
