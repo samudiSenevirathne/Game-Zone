@@ -20,7 +20,7 @@ function playGame () {
             $("#tree2").css("animation-play-state", "paused");
             $("#tree3").css("animation-play-state", "paused");
             $("#restart").css("visibility", "visible");
-            $("#restart>h1").text("level 01 completed").css({"left": "502px", "top": "265px", "visibility": "visible"});
+            $("#restart>h1").text("level 01 completed").css("visibility", "visible");
             $("#title").css("animation-name", "paused").text('   ');
             $("#restart").fadeOut(6000);
             // clearInterval(id);
@@ -32,7 +32,7 @@ function playGame () {
             $("#tree2").css("animation-name", "paused");
             $("#tree3").css("animation-name", "paused");
             $("#restart").fadeIn(100);
-            $("#restart>h1").text("level 02 completed").css({"left": "502px", "top": "265px", "visibility": "visible"});
+            $("#restart>h1").text("level 02 completed").css("visibility", "visible");
             $("#title").css("animation-name", "paused").text('   ');
             $("#restart").fadeOut(10000);
         }
@@ -43,7 +43,7 @@ function playGame () {
             $("#tree2").css("animation-name", "paused");
             $("#tree3").css("animation-name", "paused");
             $("#restart").fadeIn(100);
-            $("#restart>h1").text("level 03 completed").css({"left": "502px", "top": "265px", "visibility": "visible"});
+            $("#restart>h1").text("level 03 completed").css("visibility", "visible");
             $("#title").css("animation-name", "paused").text('   ');
             $("#restart").fadeOut(8000);
         }
@@ -63,7 +63,7 @@ function playGame () {
             $("#tree2").css("animation-name", "paused");
             $("#tree3").css("animation-name", "paused");
             $("#restart").fadeIn(100);
-            $("#restart>h1").text("level 04 completed").css({"left": "502px", "top": "265px", "visibility": "visible"});
+            $("#restart>h1").text("level 04 completed").css("visibility","visible");
             $("#title").css("animation-name", "paused").text('   ');
             $("#restart").fadeOut(8000);
         }
@@ -142,42 +142,33 @@ function playGame () {
             }
             else{
                 $("#lifeBar").val($("#lifeBar").val()-1);
+                /* try to show that dragon's life is low */
+                if($("#lifeBar").val()<=20  &&  $("#lifeBar").val()!= 0  ){
+                    $("#dragon").fadeOut(20);
+                    $("#dragon").fadeIn(20);
+                }
             }
 
       if(dset.left < t1set.left + t1w && dset.left + dw > t1set.left && dset.top < t1set.top + t1h && dset.top + dh > t1set.top || dset.left < t2set.left + t2w && dset.left + dw > t2set.left && dset.top < t2set.top + t2h && dset.top + dh > t2set.top || dset.left < t3set.left + t3w && dset.left + dw > t3set.left && dset.top < t3set.top + t3h && dset.top + dh > t3set.top || $("#lifeBar").val()==0 ) {
           if(count<6){
-              $("#dragon").css({'top':dset.top,'left':dset.left});/*extra*/
-              $("#road").css("animation-play-state", "paused");
-              $("#tree1").css("animation-play-state", "paused");
-              $("#tree2").css("animation-play-state", "paused");
-              $("#tree3").css("animation-play-state", "paused");
               $("#restart").css("visibility", "visible");
-              $("#restart>h1").text("Fail").css({"left": "610px", "top": "350px", "visibility": "visible"});
-              $("#restart>button").css("visibility", "visible");
-              clearInterval(id);
-              count = 0;
-              $("#title").css("animation-name", "paused").text('Game Over').fadeIn(100);
-              if(dsetInitial.top == dset.top) {
-                  $("#lifeBar").val(0);
-              }
-              clearInterval();
           }else{
-              $("#dragon").css({'top':dset.top,'left':dset.left});/*extra*/
-              $("#road").css("animation-play-state", "paused");
-              $("#tree1").css("animation-play-state", "paused");
-              $("#tree2").css("animation-play-state", "paused");
-              $("#tree3").css("animation-play-state", "paused");
               $("#restart").fadeIn(100);
-              $("#restart>h1").text("Fail").css({"left": "610px", "top": "350px", "visibility": "visible"});
-              $("#restart>button").css("visibility", "visible");
-              clearInterval(id);
-              count = 0;
-              $("#title").css("animation-name", "paused").text('Game Over').fadeIn(100);
-              if(dsetInitial.top == dset.top ) {
-                  $("#lifeBar").val(0);
-              }
-              clearInterval();
           }
+          $("#dragon").css({'top':dset.top,'left':dset.left});/*extra*/
+          $("#road").css("animation-play-state", "paused");
+          $("#tree1").css("animation-play-state", "paused");
+          $("#tree2").css("animation-play-state", "paused");
+          $("#tree3").css("animation-play-state", "paused");
+          $("#restart>h1").text("Fail").css("visibility", "visible");
+          $("#restart>button").css("visibility", "visible");
+          clearInterval(id);
+          count = 0;
+          $("#title").css("animation-name", "paused").text('Game Over').fadeIn(100);
+          if(dsetInitial.top == dset.top) {
+              $("#lifeBar").val(0);
+          }
+          clearInterval();
       }
     },100);
 
