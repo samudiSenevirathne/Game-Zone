@@ -1,6 +1,10 @@
-
 let count=0;
 let id;
+let id2;
+
+const lifeSound = document.getElementById('lifeSound');
+const failSound = document.getElementById('failSound');
+const levelCompleteSound = document.getElementById('levelCompleteSound');
 
 playGame ();
 
@@ -21,6 +25,7 @@ function playGame () {
             $("#tree3").css("animation-play-state", "paused");
             $("#restart").css("visibility", "visible");
             $("#restart>h1").text("level 01 completed").css("visibility", "visible");
+            levelCompleteSound.play();/*sound*/
             $("#title").css("animation-name", "paused").text('   ');
             $("#restart").fadeOut(6000);
             // clearInterval(id);
@@ -33,6 +38,7 @@ function playGame () {
             $("#tree3").css("animation-name", "paused");
             $("#restart").fadeIn(100);
             $("#restart>h1").text("level 02 completed").css("visibility", "visible");
+            levelCompleteSound.play();/*sound*/
             $("#title").css("animation-name", "paused").text('   ');
             $("#restart").fadeOut(10000);
         }
@@ -44,6 +50,7 @@ function playGame () {
             $("#tree3").css("animation-name", "paused");
             $("#restart").fadeIn(100);
             $("#restart>h1").text("level 03 completed").css("visibility", "visible");
+            levelCompleteSound.play();/*sound*/
             $("#title").css("animation-name", "paused").text('   ');
             $("#restart").fadeOut(8000);
         }
@@ -64,12 +71,14 @@ function playGame () {
             $("#tree3").css("animation-name", "paused");
             $("#restart").fadeIn(100);
             $("#restart>h1").text("level 04 completed").css("visibility","visible");
+            levelCompleteSound.play();/*sound*/
             $("#title").css("animation-name", "paused").text('   ');
             $("#restart").fadeOut(8000);
         }
 
         /*level 02 start*/
         if(count>6 && count<20){
+            levelCompleteSound.pause();/*sound*/
             $("#road").css({"animation-duration":"25s","animation-play-state":"running"});
             $("#dragon").css("border", "1px solid yellow");
             $("#tree1").css("animation-play-state","running");
@@ -78,6 +87,7 @@ function playGame () {
         }
         /*level 03 start*/
         if(count>20 && count<30){
+            levelCompleteSound.pause();/*sound*/
             $("#road").css({"animation-duration":"20s","animation-name":"moveCityAndRoad"});
             $("#dragon").css("border", "1px solid pink");
             $("#forest").css("visibility", "visible");
@@ -87,6 +97,7 @@ function playGame () {
         }
         /*level 04 start*/
         if(count>30 && count<50){
+            levelCompleteSound.pause();/*sound*/
             $("main").css('background-image','url("image/sky_my.png")');
             $("#cloud1,#cloud2,#cloud3,#cloud4,#cloud5").css('background-image','url("image/cloud_my.png")');
             $("#forest").css("visibility", "hidden");
@@ -99,6 +110,7 @@ function playGame () {
         }
         /*level 05 start*/
         if(count>50){
+            levelCompleteSound.pause();/*sound*/
             $("main").css('background-image','url("image/sky_green.png")');
             $("#cloud1,#cloud2,#cloud3,#cloud4,#cloud5").css('background-image','url("image/cloud_green.png")');
             $("#forest1,#forest3").css('background-image','url("image/green_forest.png")');
@@ -116,7 +128,7 @@ function playGame () {
 
     const dsetInitial=$("#dragon").offset();
 
-    setInterval(function() {
+    id2=setInterval(function() {
 
         var dw = $("#dragon").width();
         var dh = $("#dragon").height();
@@ -138,12 +150,14 @@ function playGame () {
 
             /*dragon's  life manage*/
             if(dsetInitial.top == dset.top && $("#lifeBar").val()!= 0 ){
+                lifeSound.pause();/*sound*/
                 $("#lifeBar").val(100);
             }
             else{
                 $("#lifeBar").val($("#lifeBar").val()-1);
                 /* try to show that dragon's life is low */
                 if($("#lifeBar").val()<=20  &&  $("#lifeBar").val()!= 0  ){
+                    lifeSound.play();/*sound*/
                     $("#dragon").fadeOut(20);
                     $("#dragon").fadeIn(20);
                 }
@@ -165,10 +179,12 @@ function playGame () {
           clearInterval(id);
           count = 0;
           $("#title").css("animation-name", "paused").text('Game Over').fadeIn(100);
+          lifeSound.pause();/*sound*/
+          failSound.play();/*sound*/
+          clearInterval(id2);
           if(dsetInitial.top == dset.top) {
               $("#lifeBar").val(0);
           }
-          clearInterval();
       }
     },100);
 
