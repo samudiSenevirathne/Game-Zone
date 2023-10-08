@@ -6,6 +6,7 @@ main {
     background: url("image/sky2.jpg");/*now eka*/
     /*background: url("image/sky_my.png");!*furer level wala eka testing*!*/
     /*background: url("image/sky_green.png");!*furer level  testing*!*/
+    /*background: url("image/last_sky.png");!*furer level  testing*!*/
     width: 100vw;
     height: 100vh;
     background-size: cover;
@@ -82,7 +83,7 @@ main {
     /*visibility: hidden;!*furer level wala eka testing*!*/
 }
 
-#forest{
+#forest{ /*test 01*/
     height: 266px;
     width: 1200px;
     background: url("image/black-tree_gather-png.png");
@@ -93,6 +94,18 @@ main {
     bottom: 169px;
     visibility: hidden;
 }
+
+/*#forest{ !*test last*!*/
+/*    width: 100vw;*/
+/*    height: 100vh;*/
+/*    background: url("image/last_forest.png");*/
+/*    background-size: cover;*/
+/*    background-position: center;*/
+/*    position: absolute;*/
+/*    left: 0px;*/
+/*    bottom: 0px;*/
+/*    !*visibility: hidden;*!*/
+/*}*/
 
 #forest1 {
     height: 330px;
@@ -152,7 +165,8 @@ main {
     animation-play-state: running;/*Extra*/
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
+    /*visibility: hidden;!*for testing*!*/
 }
 
 #tree2 {
@@ -174,7 +188,8 @@ main {
     animation-play-state: running;/*Extra*/
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
+    /*visibility: hidden;!*for testing*!*/
 }
 
 #tree3 {
@@ -196,7 +211,8 @@ main {
     animation-iteration-count: infinite;
     animation-play-state: running;/*Extra*/
     animation-timing-function: linear;
-    border: 1px solid green;
+    /*border: 1px solid green;*/
+    /*visibility: hidden;!*for testing*!*/
 }
 
 #dragon{ /*now*/
@@ -210,9 +226,8 @@ main {
     background-size: cover;
     background-position:center;
     /*background-repeat: no-repeat;*/
-    border: 1px solid white;/**/
+    /*border: 1px solid white;!**!*/
 }
-
 
 /*#dragon{!*future level testing*!*/
 /*    position: absolute;*/
@@ -221,13 +236,67 @@ main {
 /*    width: 196px;*/
 /*    height: 92px;*/
 /*    z-index: 3;*/
-/*    background: url("image/dragon_my.png");!*for future 1*!*/
+/*    !*background: url("image/dragon_my.png");!*for future 1*!*!*/
 /*    !*background: url("image/dragon_green.png");!*for future 2*!*!*/
+/*    background: url("image/last_dragon.png");!*for future last*!*/
 /*    background-size: cover;*/
 /*    background-position:center;*/
 /*    !*background-repeat: no-repeat;*!*/
-/*    border: 1px solid #ff7d00;!**!*/
+/*    !*border: 1px solid #ff7d00;!**!*!*/
 /*}*/
+
+/*#dragon{!*last level part 1 testing*!*/
+/*    position: absolute;*/
+/*    left: 166px;*/
+/*    bottom: 113px;*/
+/*    width: 196px;*/
+/*    height: 92px;*/
+/*    z-index: 3;*/
+/*    background: url("image/last_dragon.png");*/
+/*    background-size: cover;*/
+/*    background-position:center;*/
+/*}*/
+
+/*#dragon{!*last level part 2 testing*!*/
+/*    position: absolute;*/
+/*    left: 1205px;*/
+/*    bottom: 240px;*/
+/*    width: 144px;*/
+/*    height: 66px;*/
+/*    z-index: 3;*/
+/*    background: url("image/last_dragon_part_2.png");*/
+/*    background-size: cover;*/
+/*    background-position:center;*/
+/*}*/
+
+/*#dragon{!*last level part 3 testing*!*/
+/*    position: absolute;*/
+/*    left: 600px;*/
+/*    bottom: 360px;*/
+/*    width: 116px;*/
+/*    height: 55px;*/
+/*    z-index: 3;*/
+/*    background: url("image/last_dragon_part_2.png");*/
+/*    background-size: cover;*/
+/*    background-position:center;*/
+/*}*/
+
+/*#dragon{!*last level last part testing*!*/
+/*    position: absolute;*/
+/*    left: 260px;*/
+/*    bottom: 540px;*/
+/*    width: 75px;*/
+/*    height: 34px;*/
+/*    z-index: 3;*/
+/*    background: url("image/last_dragon_part_2.png");*/
+/*    background-size: cover;*/
+/*    background-position:center;*/
+/*    transform:rotate(15deg);*/
+/*}*/
+
+meter{ /*for testing*/
+    visibility: visible;/*for testing*/
+}
 
 #road {       /*now*/
     height: 26vh;
@@ -259,6 +328,7 @@ main {
 /*    animation-play-state: running;!*Extra*!*/
 /*    animation-iteration-count: infinite;*/
 /*    animation-timing-function: linear;*/
+/*    visibility: hidden;!*for testing*!*/
 /*}*/
 
 
@@ -347,7 +417,6 @@ main {
     border: 2px solid white;
     box-shadow: 1px 0 20px 6px gray;
     color: white;
-
 }
 
 #marks>h1{
@@ -366,6 +435,43 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    visibility: hidden;
+}
+
+#dragonEgg{ /*last level*/
+    width:312px;
+    height: 305px;
+    background: url("image/sad_gragon.png");
+    /*width:600px; !*last level*!*/
+    /*height: 500px; !*last level*!*/
+    /*background: url("image/dragonEgg.png"); !*last level*!*/
+    background-size: cover;
+    background-position:center;
+    visibility: hidden;
+}
+
+#leftCorner{
+    position: relative;
+    left: 180px;
+    bottom: 270px;
+    width: 129px;
+    height: 117px;
+    transform:rotate(180deg);
+    background: url("image/gif/celebrate.gif");
+    background-size: cover;
+    background-position:center;
+    visibility: hidden;
+}
+
+#rightCorner{
+    position: relative;
+    right: 1200px;
+    top: 270px;
+    width: 129px;
+    height: 117px;
+    background: url("image/gif/celebrate.gif");
+    background-size: cover;
+    background-position:center;
     visibility: hidden;
 }
 
